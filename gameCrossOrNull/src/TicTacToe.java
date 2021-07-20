@@ -1,6 +1,8 @@
 import java.util.Random;
 import java.util.Scanner;
 
+// initial commit HW4
+
 public class TicTacToe {
     static void start(){
         char[][] field = getEmptyField();
