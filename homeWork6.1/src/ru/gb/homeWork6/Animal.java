@@ -1,5 +1,5 @@
 package ru.gb.homeWork6;
-// only abstract
+// fixes 6.1
 public abstract class Animal {
 
     abstract void run(int a);
