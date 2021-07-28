@@ -42,7 +42,34 @@ public class TicTacToe {
     }
 
     static boolean isWin(char[][] field, char sign) {
-        // Horiz
+        
+        // new logic commit
+        // diagonal
+        boolean toright, toleft;
+        toright = true;
+        toleft = true;
+        for (int i=0; i< field.length; i++) {
+            toright &= (field[i][i] == sign);
+            toleft &= (field[field.length-i-1][i] == sign);
+        }
+
+        if (toright || toleft) return true;
+
+
+        //horizont & vertical
+        boolean cols, rows;
+        for (int col = 0; col < field.length; col++) {
+            cols = true;
+            rows = true;
+            for (int row = 0; row < field.length; row++) {
+                cols &= (field[col][row] == sign);
+                rows &= (field[row][col] == sign);
+            }
+            if (cols || rows) return true;
+        }
+        return false;
+    }
+ /*       // Horiz
         for (int i = 0; i < field.length; i++) {
             if (field[i][0] == sign && field[i][1] == sign && field[i][2] == sign) {
                 return true;
@@ -50,8 +77,10 @@ public class TicTacToe {
         }
         // Vert
         for (int i = 0; i < field.length; i++) {
+
             if (field[0][i] == sign && field[1][i] == sign && field[2][i] == sign) {
                 return true;
+
             }
         }
         // Diagonal
@@ -64,7 +93,7 @@ public class TicTacToe {
         }
         return false;
     }
-
+*/
     static void doAIMove(char[][] field) {
         Random random = new Random();
         int hor, ver;
