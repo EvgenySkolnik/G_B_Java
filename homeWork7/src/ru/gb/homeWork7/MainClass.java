@@ -1,5 +1,5 @@
 package ru.gb.homeWork7;
-
+// commit change
 public class MainClass {
 
     public static void main(String[] args) {

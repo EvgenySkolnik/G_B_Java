@@ -1,5 +1,5 @@
 package ru.gb.homeWork7;
-
+// commit change
 public class Cat {
 
     private String name;
