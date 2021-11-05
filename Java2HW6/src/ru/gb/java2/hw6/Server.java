@@ -1,5 +1,5 @@
 package ru.gb.java2.hw6;
-
+// to changes
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.EOFException;
