@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="ru.sea.java.filemanager.Controller">
+
+    <MenuBar>
+        <Menu text="Фаил">
+            <MenuItem text="Выйти из программы" />
+        </Menu>
+    </MenuBar>
+    <HBox>
+        <ComboBox />
+        <TextField editable="false" HBox.hgrow="ALWAYS" />
+        <Button text="вверх" />
+
+    </HBox>
+    <TableView fx:id="filesTable" VBox.vgrow="ALWAYS" />
+    <HBox spacing="5">
+        <Button maxWidth="Infinity" text="Копировать фаил" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="Infinity" text="Переместить фаил" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="Infinity" text="Удалить фаил" HBox.hgrow="ALWAYS" />
+        <Button maxWidth="Infinity" text="Выход из программы" HBox.hgrow="ALWAYS" onAction="#btnExitAction"/>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+    </HBox>
+</VBox>
